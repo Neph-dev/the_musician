@@ -1,21 +1,16 @@
 import React from 'react';
-import SideNavigation from '../../Components/SideNavigation';
 
 import './home.css';
 
 
-function Home(props) {
+function Home() {
     return (
         <div className='home-container'>
-            <div className='home-logo'>Royal Music</div>
-            <div className='login'>login</div>
 
             <div className='background-photo' />
 
-            <SideNavigation />
-
             <div className='welcome-section'>
-                <div className='welcome'>Welcome to Royal Music</div>
+                <div className='welcome'>Welcome to The Musician</div>
                 <div className='utilities'>
                     <div className='utilities-element-container'>
                         <div className='stream-icon' />
@@ -28,7 +23,7 @@ function Home(props) {
                 </div>
 
                 <div>
-                    <div className='latest'>Latest from Royal Music</div>
+                    <div className='latest'>Latest from The Musician</div>
                     <div className='latest-songs-list'>
                         <div className='emmanho1-photo' />
                         <div className='emmanho2-photo' />

@@ -3,17 +3,17 @@ import React from 'react';
 import './sideNavigation.css';
 
 
-function SideNavigation(props) {
+function SideNavigation() {
     return (
         <div className='sideNavigation-container'>
-            <div className='sideNavigation-element-container-focused'>
+            <a href='/' className='sideNavigation-element-container-focused'>
                 <div className='home-icon' />
                 <div className='sideNavigation-element'>Home</div>
-            </div>
-            <div className='sideNavigation-element-container'>
+            </a>
+            <a href='/Playlist' className='sideNavigation-element-container'>
                 <div className='playlist-icon' />
                 <div className='sideNavigation-element'>Playlist</div>
-            </div>
+            </a>
             <div className='sideNavigation-element-container'>
                 <div className='about-icon' />
                 <div className='sideNavigation-element'>About</div>

@@ -7,6 +7,7 @@ import { BrowserRouter as Routers, Route, Switch } from 'react-router-dom';
 
 //import the pages.
 import Home from '../Pages/Home';
+import Playlist from '../Pages/Playlist';
 
 
 export default function Router() {
@@ -14,6 +15,7 @@ export default function Router() {
     <Routers>
       <Switch>           
           <Route exact path='/' component={Home} />
+          <Route exact path='/Playlist' component={Playlist} />
       </Switch>
     </Routers>
   )
