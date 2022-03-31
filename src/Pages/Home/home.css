@@ -1,0 +1,156 @@
+.home-container {
+    background: linear-gradient(-45deg,#141e30, #42275a);
+    background-size: 400% 400%;
+    height: 100vh;
+    width: 100%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.background-photo {
+    align-items: center;
+    background-image: url("../../Assets/backgroundPic.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform .5s;
+    position: absolute;
+    right: 0;
+    margin-top: 5vh;
+    height: 30rem;
+    width: 20rem;
+    filter: brightness(0.7);
+
+    border-radius: 500px 0 0px 200px;
+}
+
+.home-logo {
+    color:#fff;
+    font-size: 26px;
+    margin-left: 30px;
+    padding-top: 5px;
+}
+.login {
+    color:#fff;
+    float: right;
+    margin-right: 30px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.welcome-section {
+    text-align: center;
+    margin-top: 10vh;
+    width: 100%;
+}
+.welcome {
+    color:#fff;
+    font-size: 46px;
+}
+.utilities {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.utilities-element-container {
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.utilities-element {
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.stream-icon {
+    background-image: url("../../Assets/headphone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+}
+.buy-icon {
+    background-image: url("../../Assets/wallet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+}
+
+.latest {
+    margin-top: 10vh;
+    color: #fff;
+    font-size: 24px;
+}
+.latest-songs-list {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    width: 50%;
+}
+.emmanho1-photo {
+    align-items: center;
+    background-image: url("../../Assets/emmanho1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform .5s;
+    height: 8rem;
+    width: 8rem;
+}
+.emmanho1-photo:hover{
+    transform: scale(1.1);
+}
+.emmanho2-photo {
+    align-items: center;
+    background-image: url("../../Assets/emmanho2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform .5s;
+    height: 8rem;
+    width: 8rem;
+}
+.emmanho2-photo:hover{
+    transform: scale(1.1);
+}
+.emmanho3-photo {
+    align-items: center;
+    background-image: url("../../Assets/emmanho3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform .5s;
+    height: 8rem;
+    width: 8rem;
+}
+.emmanho3-photo:hover{
+    transform: scale(1.1);
+}

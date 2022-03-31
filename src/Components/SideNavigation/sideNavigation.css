@@ -1,0 +1,59 @@
+.sideNavigation-container {
+    cursor: pointer;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15vh;
+    position: absolute;
+}
+.sideNavigation-element-container-focused {
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+    transition: transform .5s;
+    transform: scale(1.2);
+}
+.sideNavigation-element-container {
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+    transition: transform .5s;
+    transform: scale(.9);
+}
+.sideNavigation-element-container:hover {
+    transform: scale(1.2);
+}
+.sideNavigation-element {
+    color: #fff;
+    font-size: 20px;
+}
+
+.home-icon {
+    background-image: url("../../Assets/home.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 10px;
+    height: 2rem;
+    width: 2rem;
+}
+.playlist-icon {
+    background-image: url("../../Assets/music-album.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 10px;
+    height: 2rem;
+    width: 2rem;
+}
+.about-icon {
+    background-image: url("../../Assets/info.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 10px;
+    height: 2rem;
+    width: 2rem;
+}
