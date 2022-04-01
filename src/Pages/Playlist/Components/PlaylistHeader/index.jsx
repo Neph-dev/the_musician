@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './playlistHeader.css';
 
@@ -7,13 +8,13 @@ function PlaylistHeader({ page }) {
     return (
         <div className="playlist-header-container">
             <div className={page === "songs" ? "album-songs-container-songs" : "album-songs-container"}>
-                <a href="/Playlist-songs" className="album-songs">
+                <Link to="/Playlist-songs" className="album-songs">
                     Songs
-                </a>
+                </Link>
                 <div style={{ width: 2, height: 30, backgroundColor: '#fff' }} />
-                <a href="/Playlist-albums" className="album-songs">
+                <Link to="/Playlist-albums" className="album-songs">
                     Albums
-                </a>
+                </Link>
             </div>
         </div >
     );

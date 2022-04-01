@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
+
+import { Link } from 'react-router-dom';
+
+
 import PlaylistHeader from '../PlaylistHeader';
+import Header from '../../../../Components/Header/index,';
+import SideNavigation from '../../../../Components/SideNavigation';
 
 import './albums.css';
 
@@ -8,26 +14,33 @@ function Albums() {
 
     const [page, setPage] = useState('albums');
 
+    const [navigation, setNavigation] = useState('playlist')
+
     return (
-        <div>
-            <PlaylistHeader page={page} />
+        <>
+            <Header />
 
-            <div id="albums-list">
+            <SideNavigation navigation={navigation} />
+            <div>
+                <PlaylistHeader page={page} />
 
-                <a href='/Playlist-album' className="album-card-container">
-                    <div className="album-card">
-                        <div className="album-photo" />
-                        <div className="album-title">
-                            Au fond - Single
+                <div id="albums-list">
+
+                    <Link to='/Playlist-album' className="album-card-container">
+                        <div className="album-card">
+                            <div className="album-photo" />
+                            <div className="album-title">
+                                Au fond - Single
+                            </div>
+                            <div className="album-price">
+                                $9.99
+                            </div>
                         </div>
-                        <div className="album-price">
-                            $9.99
-                        </div>
-                    </div>
-                </a>
+                    </Link>
 
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 

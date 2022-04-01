@@ -2,21 +2,33 @@ import React from 'react';
 
 import './sideNavigation.css';
 
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 
-function SideNavigation() {
+function SideNavigation({ navigation }) {
     return (
         <div className='sideNavigation-container'>
-            <a href='/' className='sideNavigation-element-container-focused'>
+            <Link to='/'
+                className={
+                    navigation === 'home'
+                        ? 'sideNavigation-element-container-focused'
+                        : 'sideNavigation-element-container'}>
                 <div className='home-icon' />
                 <div className='sideNavigation-element'>Home</div>
-            </a>
-            <a href='/Playlist-songs' className='sideNavigation-element-container'>
+            </Link>
+            <Link to='/Playlist-songs'
+                className={
+                    navigation === 'playlist'
+                        ? 'sideNavigation-element-container-focused'
+                        : 'sideNavigation-element-container'}>
                 <div className='playlist-icon' />
                 <div className='sideNavigation-element'>Playlist</div>
-            </a>
-            <div className='sideNavigation-element-container'>
+            </Link>
+            <div
+                className={
+                    navigation === 'about'
+                        ? 'sideNavigation-element-container-focused'
+                        : 'sideNavigation-element-container'}>
                 <div className='about-icon' />
                 <div className='sideNavigation-element'>About</div>
             </div>
