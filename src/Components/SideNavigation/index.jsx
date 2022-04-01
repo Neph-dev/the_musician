@@ -2,6 +2,8 @@ import React from 'react';
 
 import './sideNavigation.css';
 
+import { Link } from 'react-router-dom'
+
 
 function SideNavigation() {
     return (
@@ -10,7 +12,7 @@ function SideNavigation() {
                 <div className='home-icon' />
                 <div className='sideNavigation-element'>Home</div>
             </a>
-            <a href='/Playlist' className='sideNavigation-element-container'>
+            <a href='/Playlist-songs' className='sideNavigation-element-container'>
                 <div className='playlist-icon' />
                 <div className='sideNavigation-element'>Playlist</div>
             </a>

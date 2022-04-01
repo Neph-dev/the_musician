@@ -13,8 +13,19 @@
     height: 30rem;
     width: 20rem;
     filter: brightness(0.7);
-
-    border-radius: 500px 0 0px 200px;
+    border-radius: 500px 0px 0px 200px;
+    animation: border 14s ease infinite;
+}
+@keyframes border {
+    0% {
+        border-radius: 200px 0px 0px 300px;
+    }
+    50% {
+        border-radius: 500px 100px 300px 300px;
+    }
+    100% {
+        border-radius: 200px 0px 0px 300px;
+    }
 }
 
 .welcome-section {

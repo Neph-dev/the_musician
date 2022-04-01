@@ -8,6 +8,8 @@ import { BrowserRouter as Routers, Route, Switch } from 'react-router-dom';
 //import the pages.
 import Home from '../Pages/Home';
 import Playlist from '../Pages/Playlist';
+import Albums from '../Pages/Playlist/Components/Albums';
+import Songs from '../Pages/Playlist/Components/Songs';
 
 
 export default function Router() {
@@ -16,6 +18,8 @@ export default function Router() {
       <Switch>           
           <Route exact path='/' component={Home} />
           <Route exact path='/Playlist' component={Playlist} />
+          <Route exact path='/Playlist-songs' component={Songs} />
+          <Route exact path='/Playlist-albums' component={Albums} />
       </Switch>
     </Routers>
   )

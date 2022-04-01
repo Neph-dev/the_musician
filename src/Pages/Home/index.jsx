@@ -14,7 +14,7 @@ function Home() {
                 <div className='utilities'>
                     <div className='utilities-element-container'>
                         <div className='stream-icon' />
-                        <div className='utilities-element'>Unlimited stream</div>
+                        <div className='utilities-element'>Unlimited streaming</div>
                     </div>
                     <div className='utilities-element-container'>
                         <div className='buy-icon' />

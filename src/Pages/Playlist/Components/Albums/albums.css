@@ -1,0 +1,45 @@
+#albums-list {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5vh;
+    height: 65vh;
+    width: 70%;
+    margin-left: 14rem;
+    overflow-y: auto;
+}
+.album-card-container {
+    height: 19rem;
+    width: 15rem;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+.album-card {
+    background-color: #fff;
+    cursor: pointer;
+    height: 15rem;
+    width: 15rem;
+}
+.album-photo {
+    align-items: center;
+    background-image: url("../../../../Assets/emmanho1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    transition: transform .5s;
+    height: 100%;
+    width: 100%;
+}
+.album-title {
+    color: #fff;
+    font-size: 18px;
+}
+.album-price {
+    color: #fff;
+    font-size: 18px;
+}
+.album-price:hover {
+    text-decoration: underline;
+}
