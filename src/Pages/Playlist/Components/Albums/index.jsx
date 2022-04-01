@@ -13,7 +13,8 @@ function Albums() {
             <PlaylistHeader page={page} />
 
             <div id="albums-list">
-                <div className="album-card-container">
+
+                <a href='/Playlist-album' className="album-card-container">
                     <div className="album-card">
                         <div className="album-photo" />
                         <div className="album-title">
@@ -23,7 +24,8 @@ function Albums() {
                             $9.99
                         </div>
                     </div>
-                </div>
+                </a>
+
             </div>
         </div>
     );

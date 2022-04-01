@@ -12,12 +12,12 @@ import Router from './Router/Router';
 function App() {
   return (
     <div className="App">
-            <Header/>
-            <Routers>
-              <SideNavigation />
-            </Routers>
-            <Router />
-        </div>
+        <Header/>
+        <Routers>
+          <SideNavigation />
+        </Routers>
+        <Router />
+    </div>
   );
 }
 

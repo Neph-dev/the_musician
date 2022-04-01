@@ -1,7 +1,7 @@
 #songs-list {
     background-color: #141e30;
     margin-top: 5vh;
-    height: 65vh;
+    height: 70vh;
     width: 55%;
     margin-left: 14rem;
     overflow-y: auto;
@@ -11,7 +11,7 @@
     display: flex;
     font-size: 16px;
     color: #fff;
-    margin-top: 10px;
+    padding-top: 10px;
     float: right;
     margin-right: 30px;
     cursor: pointer;
@@ -32,6 +32,7 @@
     width: 1.8rem;
 }
 ol {
+    color: #fff;
     width: 90%;
     padding-top: 30px;
     align-items: center;

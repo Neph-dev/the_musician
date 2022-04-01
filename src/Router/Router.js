@@ -4,6 +4,7 @@
 */
 
 import { BrowserRouter as Routers, Route, Switch } from 'react-router-dom';
+import Album from '../Pages/Album';
 
 //import the pages.
 import Home from '../Pages/Home';
@@ -20,6 +21,7 @@ export default function Router() {
           <Route exact path='/Playlist' component={Playlist} />
           <Route exact path='/Playlist-songs' component={Songs} />
           <Route exact path='/Playlist-albums' component={Albums} />
+          <Route exact path='/Playlist-album' component={Album} />
       </Switch>
     </Routers>
   )

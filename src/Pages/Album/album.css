@@ -1,0 +1,54 @@
+#album-container {
+    background-color: #141e30;
+    display: flex;
+    margin-top: 10vh;
+    height: 75vh;
+    width: 60%;
+    margin-left: 12rem;
+    overflow-y: auto;
+}
+
+.album-cover {
+    align-items: center;
+    background-image: url("../../Assets/emmanho1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform .5s;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    height: 15rem;
+    width: 15rem;
+}
+.sml-text {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+} 
+.md-text {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.buy-btn-container {
+    align-items: center; 
+    display: flex;
+    justify-content: center; 
+}
+.buy-btn {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 12px;
+    background-color: #126180;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px;
+    width: 100px
+}
+
+.album-song-list {
+    float: right;
+    width: 100%;
+    overflow-y: auto;
+}

@@ -14,6 +14,11 @@
     width: 15rem;
     background-color: transparent;
     margin-bottom: 10px;
+    transition: transform .5s;
+    text-decoration: none
+}
+.album-card-container:hover {
+    transform: scale(1.02);
 }
 .album-card {
     background-color: #fff;

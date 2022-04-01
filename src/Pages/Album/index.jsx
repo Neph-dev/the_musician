@@ -1,20 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Header from '../../Components/Header/index,';
+import SideNavigation from '../../Components/SideNavigation';
 
-import PlaylistHeader from '../PlaylistHeader';
-
-import './songs.css';
+import './album.css';
 
 
-function Songs() {
-
-    const [page, setPage] = useState('songs');
-
+function Album() {
     return (
-        <div>
-            <PlaylistHeader page={page} />
+        <div id='album-container'>
+            <div style={{ width: '15rem', height: '100%' }}>
+                <div className='album-cover' />
+                <div className='sml-text'>1 Songs, 2 minutes</div>
+                <div>
+                    <div className='md-text'>Emmanho</div>
+                    <div className='md-text'>Rumba • 2020</div>
+                    <div className='buy-btn-container'>
+                        <div className='buy-btn'>Buy $9.99</div>
+                    </div>
+                </div>
+            </div>
 
-            <section id="songs-list">
-
+            <section className='album-song-list'>
                 <div className="suffle">
                     <div>Suffle</div>
                     <div className="suffle-icon" />
@@ -24,8 +30,7 @@ function Songs() {
                     <div className="song">
                         <li>
                             <div className="song-title-name">
-                                <div className="song-list-photo" />
-                                <div style={{ marginLeft: 10 }}>
+                                <div>
                                     <div className="song-title">Au fond.</div>
                                     <div className="song-artist-name">Emmanho</div>
                                 </div>
@@ -37,10 +42,10 @@ function Songs() {
                         </li>
                     </div>
                 </ol>
-
             </section>
+
         </div>
     );
 }
 
-export default Songs;
+export default Album;
