@@ -1,0 +1,50 @@
+#player {
+    background: linear-gradient(-45deg,#89253e, #333399);
+    background-size: 400% 400%;
+    float: right;
+    top: 0;
+    height: 70vh;
+    width: 25%;
+    margin-right: 0.5rem;
+    
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.player-song-photo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: url("../../Assets/emmanho1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform .5s;
+    margin-left: 3rem;
+    border-radius: 200px;
+    /* border-top-left-radius: 500px; */
+    margin-top: 0.5rem;
+    height: 14rem;
+    width: 14rem;
+}
+
+.player-artist-name {
+    font-size: 20px;
+    color: #B0B0B0;
+    text-align: center;
+}
+.player-song-title {
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0.5rem;
+}
