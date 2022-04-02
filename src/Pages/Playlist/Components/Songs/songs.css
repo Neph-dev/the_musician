@@ -58,7 +58,6 @@ ol {
 }
 .song-list-photo {
     align-items: center;
-    background-image: url("../../../../Assets/emmanho1.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

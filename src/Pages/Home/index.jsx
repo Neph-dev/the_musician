@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 
+import { Link } from 'react-router-dom';
+
 import './home.css';
 
 import Header from '../../Components/Header/index,';
 import SideNavigation from '../../Components/SideNavigation';
+
+import AlbumData from '../../Data/Album';
 
 
 function Home() {
@@ -36,9 +40,17 @@ function Home() {
                     <div>
                         <div className='latest'>Latest from The Musician</div>
                         <div className='latest-songs-list'>
-                            <div className='emmanho1-photo' />
-                            <div className='emmanho2-photo' />
-                            <div className='emmanho3-photo' />
+                            {
+                                AlbumData.map((item) => (
+                                    <div key={item.id}>
+                                        <Link
+                                            to={{ pathname: '/Playlist-album', state: item }}
+                                            title={item.title}>
+                                            <img src={item.album_cover} alt="Logo" className='home-album-photo' />
+                                        </Link>
+                                    </div>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { useLocation } from 'react-router-dom';
+
 import Header from '../../Components/Header/index,';
 import Player from '../../Components/Player';
 import SideNavigation from '../../Components/SideNavigation';
@@ -9,6 +11,8 @@ import './album.css';
 
 
 function Album() {
+
+    const location = useLocation()
 
 
     const [navigation, setNavigation] = useState('playlist')
@@ -29,13 +33,13 @@ function Album() {
                     <div id='album-container'>
 
                         <div style={{ width: '15rem', height: '100%' }}>
-                            <div className='album-cover' />
+                            <img src={location.state.album_cover} alt='' className='album-cover' />
                             <div className='sml-text'>1 Songs, 2 minutes</div>
                             <div>
-                                <div className='md-text'>Emmanho</div>
-                                <div className='md-text'>Rumba • 2020</div>
+                                <div className='md-text'>{location.state.artist_1}</div>
+                                <div className='md-text'>{location.state.genre} • 2020</div>
                                 <div className='buy-btn-container'>
-                                    <div className='buy-btn'>Buy $9.99</div>
+                                    <div className='buy-btn'>Buy {location.state.price}</div>
                                 </div>
                             </div>
                         </div>
@@ -51,13 +55,13 @@ function Album() {
                                     <li>
                                         <div className="song-title-name">
                                             <div>
-                                                <div className="song-title">Au fond.</div>
-                                                <div className="song-artist-name">Emmanho</div>
+                                                <div className="song-title">{location.state.songs[0].title}</div>
+                                                <div className="song-artist-name">{location.state.songs[0].artist_1}</div>
                                             </div>
                                         </div>
                                         <div style={{ display: 'flex' }}>
                                             <div className="song-time">2:48</div>
-                                            <div className="song-price">Buy for $1.99</div>
+                                            <div className="song-price">Buy for {location.state.songs[0].price}</div>
                                         </div>
                                     </li>
                                 </div>

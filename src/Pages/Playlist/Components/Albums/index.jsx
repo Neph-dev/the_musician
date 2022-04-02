@@ -7,6 +7,8 @@ import PlaylistHeader from '../PlaylistHeader';
 import Header from '../../../../Components/Header/index,';
 import SideNavigation from '../../../../Components/SideNavigation';
 
+import AlbumData from '../../../../Data/Album';
+
 import './albums.css';
 
 
@@ -26,17 +28,24 @@ function Albums() {
 
                 <div id="albums-list">
 
-                    <Link to='/Playlist-album' className="album-card-container">
-                        <div className="album-card">
-                            <div className="album-photo" />
-                            <div className="album-title">
-                                Au fond - Single
-                            </div>
-                            <div className="album-price">
-                                $9.99
-                            </div>
-                        </div>
-                    </Link>
+                    {
+                        AlbumData.map((item) => (
+                            <Link
+                                to={{ pathname: '/Playlist-album', state: item }}
+                                key={item.id}
+                                className="album-card-container" >
+                                <div className="album-card">
+                                    <img src={item.album_cover} alt='' className="album-photo" />
+                                    <div className="album-title">
+                                        {item.title} - {item.album_type}
+                                    </div>
+                                    <div className="album-price">
+                                        {item.price}
+                                    </div>
+                                </div>
+                            </Link>
+                        ))
+                    }
 
                 </div>
             </div>

@@ -88,9 +88,8 @@
     left: 0;
     width: 50%;
 }
-.emmanho1-photo {
+.home-album-photo {
     align-items: center;
-    background-image: url("../../Assets/emmanho1.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -100,36 +99,6 @@
     height: 8rem;
     width: 8rem;
 }
-.emmanho1-photo:hover{
-    transform: scale(1.1);
-}
-.emmanho2-photo {
-    align-items: center;
-    background-image: url("../../Assets/emmanho2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
-    display: inline-block;
-    transition: transform .5s;
-    height: 8rem;
-    width: 8rem;
-}
-.emmanho2-photo:hover{
-    transform: scale(1.1);
-}
-.emmanho3-photo {
-    align-items: center;
-    background-image: url("../../Assets/emmanho3.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
-    display: inline-block;
-    transition: transform .5s;
-    height: 8rem;
-    width: 8rem;
-}
-.emmanho3-photo:hover{
+.home-album-photo:hover{
     transform: scale(1.1);
 }

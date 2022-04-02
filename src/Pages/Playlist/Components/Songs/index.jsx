@@ -5,6 +5,8 @@ import Header from '../../../../Components/Header/index,';
 import SideNavigation from '../../../../Components/SideNavigation';
 import PlaylistHeader from '../PlaylistHeader';
 
+import AlbumData from '../../../../Data/Album';
+
 import './songs.css';
 
 
@@ -31,21 +33,25 @@ function Songs() {
                         </div>
 
                         <ol>
-                            <div className="song">
-                                <li>
-                                    <div className="song-title-name">
-                                        <div className="song-list-photo" />
-                                        <div style={{ marginLeft: 10 }}>
-                                            <div className="song-title">Au fond.</div>
-                                            <div className="song-artist-name">Emmanho</div>
-                                        </div>
+                            {
+                                AlbumData.map(item => (
+                                    <div className="song" key={item.id}>
+                                        <li>
+                                            <div className="song-title-name">
+                                                <img src={item.album_cover} alt='' className="song-list-photo" />
+                                                <div style={{ marginLeft: 10 }}>
+                                                    <div className="song-title">{item.songs[0].title}</div>
+                                                    <div className="song-artist-name">{item.songs[0].artist_1}</div>
+                                                </div>
+                                            </div>
+                                            <div style={{ display: 'flex' }}>
+                                                <div className="song-time">2:48</div>
+                                                <div className="song-price">Buy for {item.songs[0].price}</div>
+                                            </div>
+                                        </li>
                                     </div>
-                                    <div style={{ display: 'flex' }}>
-                                        <div className="song-time">2:48</div>
-                                        <div className="song-price">Buy for $1.99</div>
-                                    </div>
-                                </li>
-                            </div>
+                                ))
+                            }
                         </ol>
                     </section>
 
